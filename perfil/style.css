@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9f2fc;
+
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.headerApp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: linear-gradient(
+    180deg,
+    #517fc5 13.02%,
+    rgba(81, 127, 197, 0.75) 30.73%,
+    rgba(81, 127, 197, 0.75) 82.81%,
+    #517fc5 96.35%
+  );
+  height: 36px;
+}
+
+.headerApp .image-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerApp .image-nav .orkut-img {
+  background: linear-gradient(
+    180deg,
+    #ebebeb 0%,
+    #fff 33.33%,
+    #fff 82.81%,
+    #ccc 100%
+  );
+  padding: 0.2rem 0.5rem;
+  margin-right: 12px;
+}
+
+.headerApp .image-nav .links a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 14px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions .email {
+  color: #36527d;
+  margin-right: 14px;
+  font-weight: 700;
+}
+
+.actions a.exit {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 9px;
+}
+
+.actions .searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #5f7fa7;
+  padding: 0.1rem 0.2rem 0.1rem 0.6rem;
+  border-radius: 7px;
+}
+
+.actions .searchBar .search {
+  width: 150px;
+}
+
+.actions .searchBar .search:focus {
+  outline: none;
+}
+
+.actions .searchBar .searchIcon {
+  margin-left: 0.2rem;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.content .profile {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+  margin-left: 11rem;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+.content .profile .profilePhoto {
+  width: 140px;
+  height: 160px;
+}
+
+.content .profile .name {
+  margin-top: 15px;
+  color: #4e93aa;
+  font-size: 12px;
+}
+
+.content .profile .status {
+  margin-top: 6px;
+  color: #979797;
+  font-size: 12px;
+}
+
+.content .profile .city {
+  color: #979797;
+  font-size: 12px;
+}
+
+.content .divider {
+  border: 1px solid #eaeaec;
+  margin: 0.5rem 0;
+}
+
+.content .profile .addFriends {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.content .profile .editProfile {
+  margin-right: 5px;
+}
+
+.content .profile .addFriendsInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .profile .addFriendsInfo span {
+  color: #4e93aa;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.content .profile span {
+  color: #4e93aa;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.content .profile .buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .profile .buttons button {
+  border: 1px solid #dde9f8;
+  background: #eff9ff;
+  color: #535c69;
+  border-radius: 2px 2px 0px 0px;
+  padding: 0.1rem;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: start;
+  align-items: center;
+  display: flex;
+}
+
+.content .profile .buttons button img {
+  margin-right: 8px;
+}
+
+.content .profileInfo {
+  width: 100%;
+  max-width: 560px;
+  background-color: #ffffff;
+  border-radius: 5px 50px 5px 5px;
+  padding: 1rem 1rem 0.2rem 1rem;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+.content .profileInfo p {
+  color: #000000;
+  font-size: 26px;
+}
+
+.content .profileInfo .profileStatus {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.content .profileInfo .profileStatus div {
+  color: #535c69;
+  font-size: 10px;
+}
+
+.content .profileInfo .profileStatus div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .profileInfo .profileStatus div > div img {
+  margin-right: 5px;
+}
+
+.content .profileInfo .profileStatus div > span {
+  color: #535c69;
+  font-size: 12px;
+}
+
+.content .profileInfo .profileStatus .reliable .reliableCount img,
+.content .profileInfo .profileStatus .cool .coolCount img,
+.content .profileInfo .profileStatus .sexy .sexyCount img {
+  margin-right: 0;
+}
+
+.content .profileInfo .tab {
+  background: linear-gradient(
+    180deg,
+    #517fc5 13.02%,
+    rgba(81, 127, 197, 0.75) 30.73%,
+    rgba(81, 127, 197, 0.75) 82.81%,
+    #517fc5 96.35%
+  );
+  width: 12%;
+  text-align: center;
+  border-radius: 7px 7px 0px 0px;
+  font-weight: 700;
+  padding: 0.4rem 0.3rem;
+  color: #ffffff;
+}
+
+.content .profileInfo .dividerTab {
+  border: 1px solid #b5b7bb;
+  margin: 0 0 0.5rem 0;
+}
+
+.content .profileInfo .table .bg-01 {
+  background-color: #deeefd;
+}
+
+.content .profileInfo .table .bg-02 {
+  background-color: #eef8fe;
+}
+
+.content .profileInfo .table .bg-01,
+.content .profileInfo .table .bg-02 {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 2rem;
+}
+
+.content .profileInfo .table .bg-01 p,
+.content .profileInfo .table .bg-02 p {
+  font-size: 12px;
+  color: #72777f;
+  margin-right: 5px;
+  text-align: end;
+}
+
+.content .friends .titleSection span,
+.content .community .titleSection span {
+  color: #4e93aa;
+}
+
+.content .community .titleSection,
+.content .friends .titleSection {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.content .friends {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 11rem;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+.content .friends .friendsList .friendsListOne,
+.content .friends .friendsList .friendsListTwo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.content .friends .friendsList .friendsListOne div,
+.content .friends .friendsList .friendsListTwo div {
+  background-color: #f0f0f0;
+  height: 140px;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content .friends .friendsList .friendsListOne div img,
+.content .friends .friendsList .friendsListTwo div img {
+  width: 100%;
+}
+
+.content .friends .friendsList .friendsListOne div p,
+.content .friends .friendsList .friendsListTwo div p {
+  text-align: center;
+  color: #4e93aa;
+  font-size: 12px;
+}
+
+.content .friends .friendsList .friendsListTwo {
+  margin-top: 0.5rem;
+}
+
+.content .community {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 11rem;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+.content .community .communitysList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.3rem;
+}
+
+.content .community .communitysList div {
+  background-color: #f0f0f0;
+  height: 140px;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content .community .communitysList div img {
+  width: 100%;
+}
+
+.content .community .communitysList div p {
+  text-align: center;
+  color: #4e93aa;
+  font-size: 12px;
+}
